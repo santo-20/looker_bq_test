@@ -115,6 +115,8 @@ persist_with: bq_model_default_datagroup
 
 explore: dqest15 {}
 
+explore: sql_runner_querym {}
+
 # explore: instacart_top_beverage_users_copy_copy_copy {}
 
 # explore: instacart_top_beverage_users_copy_copy_copy_copy_copy_copy_copy {}
