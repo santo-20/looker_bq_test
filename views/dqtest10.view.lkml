@@ -1,9 +1,9 @@
-include: "/views/dqtest25.view.lkml"
+include: "/views/dqtest252.view.lkml"
 # The name of this view in Looker is "Dqtest10"
 view: dqtest10 {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
-  extends: [dqtest25]
+  extends: [dqtest252]
   sql_table_name: `atlan_trial.dqtest10`
     ;;
   # No primary key is defined for this view. In order to join this view in an Explore,

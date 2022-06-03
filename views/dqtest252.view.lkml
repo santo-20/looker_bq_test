@@ -1,5 +1,5 @@
 # The name of this view in Looker is "Dqtest25"
-view: dqtest25 {
+view: dqtest252 {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
   # sql_table_name: `atlan_trial.dqtest25`
