@@ -122,7 +122,7 @@ explore: dqest15 {}
 
 # explore: dqtest {}
 
-# explore: dqtest10 {}
+explore: dqtest10 {}
 
 # explore: dqtest1 {}
 
