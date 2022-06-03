@@ -1,8 +1,8 @@
 view: test_extend_view {
-  dimension: allele_evidence_code {
+  dimension: allele_iri {
     type: string
-    description: "MHC/Allele Evidence Code"
-    sql: ${TABLE}.allele_evidence_code ;;
+    description: "MHC/Allele IRI"
+    sql: ${TABLE}.allele_iri ;;
   }
 }
 # The name of this view in Looker is "Dqest15"
@@ -19,17 +19,17 @@ view: dqest15 {
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called "Allele Evidence Code" in Explore.
 
-  # dimension: allele_evidence_code {
-  #   type: string
-  #   description: "MHC/Allele Evidence Code"
-  #   sql: ${TABLE}.allele_evidence_code ;;
-  # }
-
-  dimension: allele_iri {
+  dimension: allele_evidence_code {
     type: string
-    description: "MHC/Allele IRI"
-    sql: ${TABLE}.allele_iri ;;
+    description: "MHC/Allele Evidence Code"
+    sql: ${TABLE}.allele_evidence_code ;;
   }
+
+  # dimension: allele_iri {
+  #   type: string
+  #   description: "MHC/Allele IRI"
+  #   sql: ${TABLE}.allele_iri ;;
+  # }
 
   dimension: allele_name {
     type: string
