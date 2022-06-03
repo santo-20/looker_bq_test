@@ -1,7 +1,15 @@
+view: test_extend_view {
+  dimension: allele_evidence_code {
+    type: string
+    description: "MHC/Allele Evidence Code"
+    sql: ${TABLE}.allele_evidence_code ;;
+  }
+}
 # The name of this view in Looker is "Dqest15"
 view: dqest15 {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
+  extends: [test_extend_view]
   sql_table_name: `atlan_trial.dqest15`
     ;;
   # No primary key is defined for this view. In order to join this view in an Explore,
@@ -11,11 +19,11 @@ view: dqest15 {
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called "Allele Evidence Code" in Explore.
 
-  dimension: allele_evidence_code {
-    type: string
-    description: "MHC/Allele Evidence Code"
-    sql: ${TABLE}.allele_evidence_code ;;
-  }
+  # dimension: allele_evidence_code {
+  #   type: string
+  #   description: "MHC/Allele Evidence Code"
+  #   sql: ${TABLE}.allele_evidence_code ;;
+  # }
 
   dimension: allele_iri {
     type: string
