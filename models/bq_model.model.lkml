@@ -156,7 +156,7 @@ explore: dqest15 {}
 
 # explore: dqtest4 {}
 
-# explore: dqtest25 {}
+explore: dqtest25 {}
 
 # explore: dqtest3 {}
 
