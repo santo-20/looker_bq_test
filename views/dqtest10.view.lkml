@@ -1,7 +1,9 @@
+include: "/views/dqtest25.view.lkml"
 # The name of this view in Looker is "Dqtest10"
 view: dqtest10 {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
+  extends: [dqtest25]
   sql_table_name: `atlan_trial.dqtest10`
     ;;
   # No primary key is defined for this view. In order to join this view in an Explore,
@@ -23,11 +25,11 @@ view: dqtest10 {
     sql: ${TABLE}.allele_iri ;;
   }
 
-  dimension: allele_name {
-    type: string
-    description: "MHC/Allele Name"
-    sql: ${TABLE}.allele_name ;;
-  }
+  # dimension: allele_name {
+  #   type: string
+  #   description: "MHC/Allele Name"
+  #   sql: ${TABLE}.allele_name ;;
+  # }
 
   dimension: antigen_iri {
     type: string
